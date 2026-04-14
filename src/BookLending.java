@@ -19,3 +19,8 @@ class BookLending {
         book.status = BookStatus.AVAILABLE;
        // member.borrowedBooks.remove(book);
     }
+
+    public Date getReturnDate() {
+          return returnDate;
+    }
+}
