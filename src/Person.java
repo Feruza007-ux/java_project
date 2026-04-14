@@ -1,2 +1,6 @@
-public class Person {
+class Person {
+    String name;
+    Address address;
+    String email;
+    String phone;
 }
