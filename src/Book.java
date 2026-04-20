@@ -1,21 +1,29 @@
 public class Book {
-    private String ISBN;
     private String title;
+    private Author author;
     private String subject;
-    private String publisher;
-    private String language;
-    private int numberOfPages;
+    private String publicationDate;
 
-    public Book(String ISBN, String title, String subject, String publisher, String language, int numberOfPages){
-        this.ISBN=ISBN;
-        this.title=title;
-        this.subject=subject;
-        this.publisher=publisher;
-        this.language=language;
-        this.numberOfPages=numberOfPages;
+    public Book(String title, Author author, String subject, String publicationDate) {
+        this.title = title;
+        this.author = author;
+        this.subject = subject;
+        this.publicationDate = publicationDate;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public String getPublicationDate() {
+        return publicationDate;
     }
 }
